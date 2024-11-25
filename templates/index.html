@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Predictor</title>
+</head>
+<body>
+    <h1>Enter House Details</h1>
+    <form action="/predict" method="POST">
+        <label for="area">Area (in sq. ft.):</label>
+        <input type="text" id="area" name="area"><br><br>
+
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="text" id="bedrooms" name="bedrooms"><br><br>
+
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="text" id="bathrooms" name="bathrooms"><br><br>
+
+        <label for="stories">Stories:</label>
+        <input type="text" id="stories" name="stories"><br><br>
+
+        <label for="parking">Parking:</label>
+        <input type="text" id="parking" name="parking"><br><br>
+
+        <label for="mainroad">Mainroad (1 for Yes, 0 for No):</label>
+        <input type="text" id="mainroad" name="mainroad"><br><br>
+
+        <label for="guestroom">Guestroom (0.1 for Yes, 0.0 for No):</label>
+        <input type="text" id="guestroom" name="guestroom"><br><br>
+
+        <label for="basement">Basement (1 for Yes, 0 for No):</label>
+        <input type="text" id="basement" name="basement"><br><br>
+
+        <label for="hotwaterheating">Hotwaterheating (1 for Yes, 0 for No):</label>
+        <input type="text" id="hotwaterheating" name="hotwaterheating"><br><br>
+
+        <label for="airconditioning">Airconditioning (1 for Yes, 0 for No):</label>
+        <input type="text" id="airconditioning" name="airconditioning"><br><br>
+
+        <label for="prefarea">Prefarea (1 for Yes, 0 for No):</label>
+        <input type="text" id="prefarea" name="prefarea"><br><br>
+
+        <label for="furnishingstatus">Furnishing Status (0.0 for Unfurnished, 0.1 for Semi-furnished, 0.2 for Furnished):</label>
+        <input type="text" id="furnishingstatus" name="furnishingstatus"><br><br>
+
+        <button type="submit">Predict Price</button>
+    </form>
+</body>
+</html>
